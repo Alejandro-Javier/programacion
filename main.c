@@ -22,28 +22,30 @@ int main (void)
 {
    
     int opcion;    
-    int valor;
+    int numero;
+    int x, n;
     printf ("Seleccione la opcion deseada \n");
     printf ("1. Calcular letra NIF \n");    
     printf ("2. Convertir a numero Romano \n");
     printf ("0. Finalizar aplicacion \n");
     scanf("%i", &opcion);
     
-    //printf ("Escribe tu numero a valorar: \n");
-    //scanf ("%i \n", &valor); 
-    if(opcion == 1)             
+    printf ("Escribe tu numero a valorar: \n");
+    scanf ("%i \n", &numero); 
+    
+    
+    switch(opcion)             
         {                  
-       funcion_dni(&valor);
-        }
-    else if (opcion == 2)
-        {
-           numeros_romanos();
-        }
-    else if (opcion == 0)
-    {
+        case 1: funcion_dni(&numero);
+        break;        
+    case 2:     
+           numeros_romanos(&numero);
+           break;        
+    case 3:      
        printf("Aplicación finalizada"); 
+       break;    
+    default: break;
     }
-       
 return (0);
 }
 
