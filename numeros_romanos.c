@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 
-int numeros_romanos (int*z)
+int numeros_romanos (int *z)
 {
 int n, a, b, c, d;
 
