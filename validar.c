@@ -16,8 +16,6 @@ int validar ()
 int dni;
 int n;
 
-
-
 {
     if(dni >0 && dni <= 99999999)
 
