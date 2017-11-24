@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 //int numeros_romanos (void);
-void funcion_dni (int *dni);
+void funcion_dni (int *x);
 void numeros_romanos(int *n);
 
 int validar ()
