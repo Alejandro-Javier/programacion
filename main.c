@@ -14,8 +14,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int funcion_dni(int *dni);
-int numeros_romanos(int*z);
+int funcion_dni (int *x);
+int numeros_romanos (int*n);
 
 
 int main (void) 
@@ -28,15 +28,16 @@ int main (void)
     printf ("2. Convertir a numero Romano \n");
     printf ("0. Finalizar aplicacion \n");
     scanf("%i", &opcion);
-    printf ("Escribe tu numero a valorar: \n");
-    scanf ("%i \n", &valor); 
+    
+    //printf ("Escribe tu numero a valorar: \n");
+    //scanf ("%i \n", &valor); 
     if(opcion == 1)             
         {                  
        funcion_dni(&valor);
         }
     else if (opcion == 2)
         {
-           numeros_romanos(&valor);
+           numeros_romanos();
         }
     else if (opcion == 0)
     {
